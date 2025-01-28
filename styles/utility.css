@@ -1,0 +1,15 @@
+.title-xl {
+    font: var(--title-xl);
+}
+
+.title-lg {
+    font: var(--title-lg);
+}
+
+.title-md {
+    font: var(--title-md);
+}
+
+.title-sm {
+    font: var(--title-sm);
+}
