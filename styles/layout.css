@@ -23,7 +23,7 @@ main {
 
     & .title {
         display: grid;
-        gap: 8p x;
+        gap: 8px;
         margin-bottom: 3rem;
     }
 
@@ -46,5 +46,18 @@ aside {
     & header {
         gap: 8px;
         margin-bottom: 2rem; 
+    }
+}
+
+@media (max-width: 728px) {
+    #app {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto; /* Permite que o conteúdo cresça */
+        overflow: auto; /* Garante que role junto */
+    }
+
+    aside {
+        width: 100%;
     }
 }
