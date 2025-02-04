@@ -31,10 +31,10 @@
     --pink: #F682A5;
 
     --font: "Poppins", sans-serif;
-    --title-xl: 700 2rem/120% var(--font);
-    --title-lg: 700 1.5rem/120% var(--font);
-    --title-md: 700 1.25rem/120% var(--font);
-    --title-sm: 700 1rem/120% var(--font);
+    --title-xl: 600 2rem/120% var(--font);
+    --title-lg: 600 1.5rem/120% var(--font);
+    --title-md: 600 1.25rem/120% var(--font);
+    --title-sm: 600 1rem/120% var(--font);
 
     --text: 400 1rem/1.5 var(--font);
     --text-sm: 400 0.875rem/1.4 var(--font);
@@ -45,8 +45,15 @@ body {
     background-color: var(--surface-primary);
     color: var(--text-primary);
     font: var(--text-sm);
+    overflow: hidden;
 }
 
 a {
     text-decoration: none;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+

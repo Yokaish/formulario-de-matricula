@@ -13,3 +13,27 @@
 .title-sm {
     font: var(--title-sm);
 }
+
+.text {
+    font: var(--text);
+}
+
+.text-sm {
+    font: var(--text-sm);
+}
+
+.highlight {
+    color: var(--text-highlight);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}

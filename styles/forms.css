@@ -1,0 +1,61 @@
+@import url(fields/index.css);
+
+fieldset {
+    border: none;
+    display: grid;
+    gap: 1.5rem;
+}
+
+legend {
+    font: var(--title-md);
+    margin-bottom: 1.5rem;
+}
+
+input[type="date"] {
+    position: relative;
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(../assets/icons/calendar-03.svg) center/contain;
+        right: 1rem;
+
+        width: 1.25rem;
+        height: 1.25rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}
+
+select {
+    cursor: pointer;
+    background: url(../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
+}
+
+option {
+    cursor: pointer;
+}
+
+fieldset + fieldset {
+    margin-top: 3rem;
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    color: var(--semantic-error);
+    gap: .25rem;
+    margin-top: .25rem;
+    font: var(--text-sm);
+}
+
+.actions-wrapper {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1.5rem;
+}
